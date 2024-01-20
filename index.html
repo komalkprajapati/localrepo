@@ -1,14 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+            border-radius: 10px;
+        }
+
+        body {
+            margin-top: 100px;
+            /* background-color: rgba(10, 10, 10, 0.638); */
+            background: url(https://www.nawpic.com/media/2020/desktop-backgrounds-nawpic-14.jpg);  
+            /* background-position:; */
+            background-repeat: no-repeat;
+          
+            background-size:cover;
+            
+        }
+       
+
+        
+        .Login {
+            border: 2px solid transparent;
+            min-height: 60vh;
+            /* background-color: rgb(71, 184, 116); */
+            backdrop-filter: blur(10px);
+            width: 20vw;
+            border-radius: 10px;
+            margin: auto;
+            justify-content: center;
+            box-shadow: 0px 2px 14px 3px;
+        }
+
+        .box {
+            margin: 20px;
+            box-sizing: border-box;
+            font-weight: bolder;
+            padding-top: 20px;
+            
+        }
+
+        h2,
+        p {
+            text-align: center;
+            padding: 8px;
+            position: relative;
+            z-index: 1;
+        }
+
+        input[type=email],
+        input[type=password] {
+            width: 20em;
+           
+            border-radius: 5px;
+            height: 38px;
+            background-color: transparent;
+            border: 1px solid rgba(4, 4, 4, 0.733);
+           
+           
+        }
+        ::-webkit-input-placeholder{
+            color:black;
+        }
+
+        .box1 {
+            text-align: center;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        input[type=submit] {
+            margin: 2px;
+            padding: 7px;
+            width: 60px;
+            border: transparent;
+            border-radius: 5px;
+            background-color:transparent;
+            /* color: white; */
+        }
+      
+
+        /* #head {
+            background-color: transparent;
+            
+           
+        } */
+
+
+      input[type=email]:hover,
+        input[type=password]:hover {
+       
+         margin: 2px;
+       
+         
+        }
+        input[type=submit]:hover{
+            background-color: transparent;
+        }
+
+        button:hover{
+            transition: all 1s ease-in-out 1s; 
+          background-color: transparent;
+           
+        }
+     
+    </style>
 </head>
+
 <body>
-    <p>this is new repo</p>
-    <p>second repo (dropdown)</p>
+
+    <div class="Login">
+        <div id="head">
+            <h2>Login Your Account</h2>
+
+            <p>Fill all the information for Login</p>
+        </div>
+        <div class="box">
+            <label for="email" class="one">Your Email </label><br>
+            <input type="email" id="email" class="one" placeholder="   Enter your email">
+            <br>
+            <br>
+            <label for="password">Your password</label><br>
+            <input type="password" id="password" placeholder="   Enter your padssword">
+        </div>
+        <div class="box box1">
+            <button><input type="submit" value="Login"></button>
+        </div>
+    </div>
+
+   
 </body>
+
 </html>
-
-
